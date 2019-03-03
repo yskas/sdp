@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sdp", "sdp\sdp.vbproj", "{D
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sdp.Tests", "sdp.Tests\sdp.Tests.vbproj", "{93C64803-8A45-4595-A615-595B384A3038}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "sdp_editor", "sdp_editor\sdp_editor.njsproj", "{1B099B9C-81A7-4D64-AE4A-D382494A7267}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{93C64803-8A45-4595-A615-595B384A3038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C64803-8A45-4595-A615-595B384A3038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C64803-8A45-4595-A615-595B384A3038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B099B9C-81A7-4D64-AE4A-D382494A7267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B099B9C-81A7-4D64-AE4A-D382494A7267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B099B9C-81A7-4D64-AE4A-D382494A7267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B099B9C-81A7-4D64-AE4A-D382494A7267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
