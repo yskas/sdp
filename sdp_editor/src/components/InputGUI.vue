@@ -39,7 +39,6 @@
                 return;
             };
             if (this.movingAnchor) {
-                console.log(newValue + " " + oldValue);
                 this.height -= ((newValue || 0) - (oldValue || 0));
             };
         }
@@ -50,7 +49,6 @@
                 return;
             };
             if (this.movingAnchor) {
-                console.log(newValue + " " + oldValue);
                 this.width -= ((newValue || 0) - (oldValue || 0));
             }
         }
@@ -96,14 +94,20 @@
 
                 } else {
                     window.onmousemove = null;
+                    window.onmousedown = null;
+                    window.onmousedown = null;
                 };
 
             };
             window.onmouseup = ($uEvent: MouseEvent) => {
                 window.onmousemove = null;
+                window.onmousedown = null;
+                window.onmousedown = null;
                 this.emitGUIMouseUp();
             };
             window.onmousedown = ($uEvent: MouseEvent) => {
+                window.onmousemove = null;
+                window.onmousedown = null;
                 window.onmousedown = null;
                 this.emitGUIUnselect();
                 if (this.$el.parentElement) this.$el.parentElement.removeChild(this.$el);
@@ -165,14 +169,20 @@
                     };
                 } else {
                     window.onmousemove = null;
+                    window.onmousedown = null;
+                    window.onmousedown = null;
                 };
             };
             window.onmouseup = ($uEvent: MouseEvent) => {
                 window.onmousemove = null;
+                window.onmouseup = null;
+                window.onmousedown = null;
                 this.emitGUIMouseUp();
             };
             window.onmousedown = ($uEvent: MouseEvent) => {
-                window.onclick = null;
+                window.onmousemove = null;
+                window.onmousedown = null;
+                window.onmousedown = null;
                 this.emitGUIUnselect();
                 if (this.$el.parentElement) this.$el.parentElement.removeChild(this.$el);
             };

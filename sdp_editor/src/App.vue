@@ -88,7 +88,6 @@
          * */
         onWindowResize(): void {
             var UIComponent: HTMLElement = document.querySelector(".sdp-editorTools") || new HTMLElement;
-            console.log(UIComponent.offsetHeight)
             this.myPage.height = window.innerHeight - UIComponent.offsetHeight - 20;
             this.myPage.width = window.innerWidth * 0.9;
         }
@@ -122,9 +121,7 @@
         }
 
         emitSelect(comp: any): void {
-            console.log(comp);
             this.selected.push(comp);
-            console.log(this.selected,length);
         }
         emitUnselect(comp: any): void {
             var that = this;

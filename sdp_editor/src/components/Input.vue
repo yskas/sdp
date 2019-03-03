@@ -32,19 +32,19 @@
 
         // == Watch ==
         @Watch('top')
-        onTopChange(newValue: string, oldValue: string): void {
+        onTopChange(newValue: number, oldValue: number): void {
             this.wrapperStyle.top = newValue + "px";
         }
         @Watch('left')
-        onLeftChange(newValue: string, oldValue: string): void {
+        onLeftChange(newValue: number, oldValue: number): void {
             this.wrapperStyle.left = newValue + "px";
         }
         @Watch('height')
-        onHeightChange(newValue: string, oldValue: string): void {
+        onHeightChange(newValue: number, oldValue: number): void {
             this.wrapperStyle.height = newValue + "px";
         }
         @Watch('width')
-        onWidthChange(newValue: string, oldValue: string): void {
+        onWidthChange(newValue: number, oldValue: number): void {
             this.wrapperStyle.width = newValue + "px";
             this.inputStyle.width = newValue * this.inputWidthRatio + "px";
         }
